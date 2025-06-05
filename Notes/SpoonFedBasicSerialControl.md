@@ -1,5 +1,5 @@
 # Basic Serial Control
-**BASED OFF [serial.hpp](../hollyhock-2/sdk/include/sdk/os/serial.hpp)**
+**BASED OFF [serial.hpp](../hollyhock-2/sdk/include/sdk/os/serial.hpp)** 
 
 ```cpp
 void Serial::begin()

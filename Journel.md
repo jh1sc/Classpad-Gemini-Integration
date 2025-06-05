@@ -21,7 +21,6 @@ Useful resource: [Calc specs and more](https://classpaddev.github.io/)
   * RX (Receive): this pin receives data in to the calc
   * GND: Common electrical reference point (0 Volts) 
     - When connected to the ESP32, TX pin connects to the calcs RX pin and vice versa, and obv grounds need to connect
-    - Total Voltage must sum to 0, as if not data would be garbled
 
 ## 6/5/2025
 > More research, i guess understanding serial in greater depth? I have no clue on anything whooops
@@ -54,4 +53,17 @@ graph TD
 
 ### Core serial functions in hollyhock
 Luckily in our luck, hollyhock has done our dirty work - the low level stuff, which is perfect; dont know what id do otherwise haha
-* [serial.hpp](hollyhock-2/sdk/include/sdk/os/serial.hpp)
+* [serial.hpp](hollyhock-2/sdk/include/sdk/os/serial.hpp) Look at [Notes](notes/SpoonFedBasicSerialControl.md) for ai slop documentation; still useful tho
+
+
+### More serial info of calc
+So the ESP32 operates on 3.3V, and confirmed by @that.snail, the fx-CP400 alson operates on 3.3V!!
+this is great that means they are directly compatible, and there is no need for a logic level shifter, which is more complexity i dont need!
+
+$GND_{ESP32} = GND_{Classpad}$
+
+### Started material list. For tmwr and on, 
+* [Materials](Notes/Materials.md)
+
+Impulsively bought.. oh wellll
+
