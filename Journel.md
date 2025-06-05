@@ -23,3 +23,8 @@ Useful resource: [Calc specs and more](https://classpaddev.github.io/)
     - When connected to the ESP32, TX pin connects to the calcs RX pin and vice versa, and obv grounds need to connect
     - Total Voltage must sum to 0, as if not data would be garbled
 
+## 6/5/2025
+> More research, i guess understanding serial in greater depth? I have no clue on anything whooops
+Ok, so with hollyhock we can send and receive serial data via [serial](https://github.com/SnailMath/hollyhock-2/blob/master/sdk/include/sdk/os/serial.hpp)
+
+
