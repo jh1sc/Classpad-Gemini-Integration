@@ -1,10 +1,12 @@
 # Project Materials List for Classpad-Gemini-Integration
 | Item                                                | Status                                             | Link                                                                                                         | Cost          |
 |-----------------------------------------------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------|---------------|
-| ESP32 !(ESP)[esp32.png]                             | Receiving from friend                              | n/a                                                                                                          | free!         |
+| ESP32                              | Receiving from friend                              | n/a                                                                                                          | free!         |
 | 2.5mm 3-Pole Male Pigtail Cable !(Cable)[cable.png] | Ordered from AliExpress  Expected Arrival ~15 days | https://www.aliexpress.com/item/1005005323735681.html?spm=a2g0o.order_list.order_list_main.10.1f7f1802iX4dpf | AU$2.57       |
 | Electronics Kit  !(Kit)[kit.png]                    | Ordered from AliExpress Expected Arrival ~15 days  | https://www.aliexpress.com/item/1005007196303273.html?spm=a2g0o.order_list.order_list_main.15.1f7f1802iX4dpf | AU$3.67       |
 | Multimeter !(Multimeter)[multimeter.png]            | Ordered from AliExpress Expected Arival ~15 days   | https://www.aliexpress.com/item/1005005221413391.html?spm=a2g0o.order_list.order_list_main.5.1f7f1802iX4dpf  | Total:AU$8.17 |                                                    |
+
+s !(s)[esp32.png]
 
 ### Notes on Cable and Connection:
 * The ClassPad fx-CP400's 3-pin serial port uses 3.3V logic levels
