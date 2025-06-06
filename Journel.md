@@ -88,20 +88,10 @@ I learnt about this tool called **Doxygen** in short it creates comprehensive do
 Just getting a feel for making little apps - not for function just for practice
 
 ```cpp
-#include <appdef.hpp>
-#include <sdk/calc/calc.hpp>
-#include <sdk/os/lcd.hpp>
-#include <sdk/os/debug.hpp>
-
-APP_NAME("Testing")
-APP_DESCRIPTION("A super simple app")
-APP_AUTHOR("jh1sc")
-APP_VERSION("1.0.0")
-
-extern "C"
+// ...
 void main() {
-    calcInit(); // Initialize and backup screen
-    // Simple float calculation
+    calcInit(); 
+    fillScreen(color(0, 0, 0));
     float a = 10.5f;
     float b = 5.2f;
     float sum = a + b;
@@ -113,8 +103,9 @@ void main() {
     Debug_Printf(0, 10, false, 0, "Difference: %f", difference);
     Debug_Printf(0, 20, false, 0, "Product: %f", product);
     Debug_Printf(0, 30, false, 0, "Quotient: %f", quotient);
+
+    LCD_Refresh();
     
-    // Wait for key press to exit
     while (true) {
         uint32_t key1, key2;
         getKey(&key1, &key2);
@@ -123,6 +114,6 @@ void main() {
         }
     }
     
-    calcEnd(); // Restore screen
+    calcEnd();
 }
 ```
