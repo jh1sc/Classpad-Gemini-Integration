@@ -5,6 +5,7 @@ description: "Trying to hook up the fx-CP400 (Classpad II) to the internet and m
 date created: "30/05/2025" 
 ---
 # Journel
+> High level goalL Connect Casio ClassPad fx-CP400 calculator to Gemini Ai API, i want to be able to type a question into the the calc, send it to gemini then have the answer displayed in the calc.
 
 ## 30/5/2025
 > Research stuff
@@ -67,3 +68,17 @@ $GND_{ESP32} = GND_{Classpad}$
 
 Impulsively bought.. oh wellll
 
+## 6/6/2025
+The bulk fo today was setting up the development enviroment.
+I spent time looking over [hollyhock repo](https://github.com/SnailMath/hollyhock-2), as i have made a couple really basic apps in the past, so this was a refresher but, also i wanted to gain a deeper intuition in the the different functions, structure etc. As this is pretty low level stuff compared to the things i make and having a genuine understanding of HOW things work together or singularly i think will help. 
+
+As also i have a rocky and limited understanding of C++/C, most of it comes from how a lot of languages inherit C++/C's lexicon such as for loops, definition of variables etc. I want to learn how to use it and understand my code, not vibe code it - that takes the fun out of it. However i will most definitely use ai, to explain foreign concepts!
+
+Luckily in my case, ive already went through the pain of making the sh4-elf-g++ compiler within my WSL terminal. 
+
+### Auto Documentation! - Doxygen 
+I learnt about this tool called **Doxygen** in short it creates comprehensive documentation for code bases such as this - when you dont really know the structure and or structure of things and functions. 
+* [Doxygen](https://www.doxygen.nl/index.html)
+
+
+<img src="Notes/doxygenHH.png" alt="Hollyhock/Doxygen" width="600" height="500">
