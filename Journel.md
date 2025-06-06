@@ -82,3 +82,47 @@ I learnt about this tool called **Doxygen** in short it creates comprehensive do
 
 
 <img src="Notes/doxygenHH.png" alt="Hollyhock/Doxygen" width="600" height="500">
+
+
+### General Testing
+Just getting a feel for making little apps - not for function just for practice
+
+```cpp
+#include <appdef.hpp>
+#include <sdk/calc/calc.hpp>
+#include <sdk/os/lcd.hpp>
+#include <sdk/os/debug.hpp>
+
+APP_NAME("Testing")
+APP_DESCRIPTION("A super simple app")
+APP_AUTHOR("jh1sc")
+APP_VERSION("1.0.0")
+
+extern "C"
+void main() {
+    calcInit(); // Initialize and backup screen
+    // Simple float calculation
+    float a = 10.5f;
+    float b = 5.2f;
+    float sum = a + b;
+    float difference = a - b;
+    float product = a * b;
+    float quotient = a / b;
+
+    Debug_Printf(0, 0, false, 0, "Sum: %f", sum);
+    Debug_Printf(0, 10, false, 0, "Difference: %f", difference);
+    Debug_Printf(0, 20, false, 0, "Product: %f", product);
+    Debug_Printf(0, 30, false, 0, "Quotient: %f", quotient);
+    
+    // Wait for key press to exit
+    while (true) {
+        uint32_t key1, key2;
+        getKey(&key1, &key2);
+        if (testKey(key1, key2, KEY_CLEAR)) {
+            break;
+        }
+    }
+    
+    calcEnd(); // Restore screen
+}
+```
